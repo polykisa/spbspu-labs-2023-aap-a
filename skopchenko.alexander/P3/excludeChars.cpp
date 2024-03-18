@@ -1,7 +1,6 @@
 #include "excludeChars.h"
-#include <iostream>
 
-void skopchenko::excludeCharacters(char *str1, char *str2)
+char *skopchenko::excludeCharacters(char *str1, char *str2, char* result)
 {
   int asciiMap[256] = {0};
 
@@ -10,8 +9,6 @@ void skopchenko::excludeCharacters(char *str1, char *str2)
     asciiMap[(int)*str2] = 1;
     str2++;
   }
-
-  char *result = new char[10000];
 
   int i = 0;
   while (*str1 != '\0')
@@ -23,6 +20,6 @@ void skopchenko::excludeCharacters(char *str1, char *str2)
     str1++;
   }
   result[i] = '\0';
-  std::cout << result << '\n';
-  delete[] result;
+
+  return result;
 }

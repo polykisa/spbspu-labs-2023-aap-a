@@ -3,8 +3,7 @@
 
 namespace skopchenko
 {
-  void excludeCharacters(char *str1, char *str2);
+  char *excludeCharacters(char *str1, char *str2, char* result);
 }
 
 #endif //EXCLUDECHARS_H
-

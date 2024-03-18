@@ -1,4 +1,6 @@
 #include "stringinput.h"
+#include "excludeChars.h"
+
 
 int main() {
   char *inputString = nullptr;
@@ -15,11 +17,17 @@ int main() {
   if (inputString[0] == '\0') {
     delete[] inputString;
     delete[] additionalString;
-    std::cerr << "Bad input\n";
+    std::cerr << "Empty input!\n";
     return 1;
   }
 
-  delete [] inputString;
-  delete [] additionalString;
+  char *result = new char[1000];
+
+  skopchenko::excludeCharacters(inputString, additionalString, result);
+  std::cout << result << '\n';
+
+  delete[] inputString;
+  delete[] additionalString;
+  delete[] result;
 
 }
