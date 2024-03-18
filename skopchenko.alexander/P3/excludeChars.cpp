@@ -6,14 +6,14 @@ char *skopchenko::excludeCharacters(char *str1, char *str2, char* result)
 
   while (*str2 != '\0')
   {
-    asciiMap[(int)*str2] = 1;
+    asciiMap[static_cast<int>(*str2)] = 1;
     str2++;
   }
 
   int i = 0;
   while (*str1 != '\0')
   {
-    if (asciiMap[(int)*str1] == 0) {
+    if (asciiMap[static_cast<int>(*str1)] == 0) {
       result[i] = *str1;
       i++;
     }
