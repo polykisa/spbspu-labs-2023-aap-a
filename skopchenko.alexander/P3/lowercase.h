@@ -3,7 +3,7 @@
 
 namespace skopchenko
 {
-  char *convertToLowerCase(const char &string);
+  char *convertToLowerCase(char *string);
 }
 
 #endif //LOWERCASE_H
