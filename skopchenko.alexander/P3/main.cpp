@@ -27,16 +27,14 @@ int main()
   }
 
   char *excludedChars = new char[1000];
-  char *lowercase = nullptr;
 
   excludedChars = skopchenko::excludeCharacters(inputString, additionalString, excludedChars);
-  lowercase = skopchenko::convertToLowerCase(inputString);
+  char *lowercase = skopchenko::convertToLowerCase(inputString);
   std::cout << excludedChars << '\n';
   std::cout << lowercase << '\n';
 
   delete[] inputString;
   delete[] additionalString;
   delete[] excludedChars;
-  delete[] lowercase;
 
 }

@@ -3,14 +3,12 @@
 
 char *skopchenko::convertToLowerCase(char *string)
 {
-  char* result = new char[strlen(string) + 1];
-  strcpy(result, string);
-  for (int i = 0; result[i] != '\0'; ++i)
+  for (size_t i = 0; string[i] != 0; i++)
   {
-    if (result[i] >= 'A' && result[i] <= 'Z')
+    if (string[i] >= 'A' && string[i] <= 'Z')
     {
-      result[i] = result[i] - 'A' + 'a';
+      string[i] += 32;
     }
   }
-  return result;
+  return string;
 }
