@@ -3,7 +3,7 @@
 
 namespace skopchenko
 {
-  char *excludeCharacters(char *str1, char *str2, char* result);
+  char *excludeCharacters(const char *str1, const char *str2, char* result);
 }
 
-#endif //EXCLUDECHARS_H
+#endif

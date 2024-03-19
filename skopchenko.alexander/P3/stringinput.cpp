@@ -6,8 +6,7 @@ char *skopchenko::stringInput(std::istream &input)
   char currChar = 0;
   size_t size = 14;
   size_t i = 0;
-  char *dynamicString = nullptr;
-  dynamicString = new char[size]();
+  char *dynamicString = new char[size]();
 
   input >> std::noskipws;
 
