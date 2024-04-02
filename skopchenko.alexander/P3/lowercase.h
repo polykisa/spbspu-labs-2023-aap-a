@@ -6,4 +6,4 @@ namespace skopchenko
   char *convertToLowerCase(char *string);
 }
 
-#endif //LOWERCASE_H
+#endif

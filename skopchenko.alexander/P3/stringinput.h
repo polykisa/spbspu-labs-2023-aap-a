@@ -8,4 +8,4 @@ namespace skopchenko
   char *stringInput(std::istream &input);
 }
 
-#endif //STRINGINPUT_H
+#endif
