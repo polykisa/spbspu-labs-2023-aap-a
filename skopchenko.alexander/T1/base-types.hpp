@@ -1,20 +1,17 @@
 #ifndef BASE_TYPES_HPP
 #define BASE_TYPES_HPP
 
-namespace skopchenko
+struct point_t
 {
-  struct point_t
-  {
-    double x;
-    double y;
-  };
+  double x;
+  double y;
+};
 
-  struct rectangle_t
-  {
-    double width;
-    double height;
-    point_t pos;
-  };
-}
+struct rectangle_t
+{
+  double width;
+  double height;
+  point_t pos;
+};
 
 #endif
