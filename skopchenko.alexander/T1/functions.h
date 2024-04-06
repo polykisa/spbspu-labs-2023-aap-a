@@ -1,6 +1,8 @@
 #ifndef FUNCTIONS_H
 #define FUNCTIONS_H
 
+#include "base-types.hpp"
+
 namespace suppFunctions
 {
   point_t findSummVector(point_t point, double dx, double dy);

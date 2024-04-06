@@ -28,7 +28,7 @@ void Rectangle::move(double dx, double dy)
 
 void Rectangle::move(point_t position)
 {
-  point_t diff = suppFunctions::findDifference(position, getFrameRectangle().position);
+  point_t diff = suppFunctions::findDifference(position, getFrameRectangle().pos);
   move(diff.x, diff.y);
 }
 
@@ -38,7 +38,7 @@ void Rectangle::scale(double k)
   {
     throw std::invalid_argument("k under zero");
   }
-  point_t center = getFrameRectangle().position;
+  point_t center = getFrameRectangle().pos;
   left_down_ = suppFunctions::makeScale(left_down_, center, k);
   right_up_ = suppFunctions::makeScale(right_up_, center, k);
 }
