@@ -1,6 +1,6 @@
 #include "rectangle.hpp"
 #include <stdexcept>
-#include "functions.h"
+#include "functions.hpp"
 
 Rectangle::Rectangle(point_t left_down, point_t right_up):
   left_down_(left_down),

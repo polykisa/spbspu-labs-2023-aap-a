@@ -1,4 +1,4 @@
-#include "functions.h"
+#include "functions.hpp"
 
 point_t suppFunctions::findSummVector(point_t point, double dx, double dy)
 {
